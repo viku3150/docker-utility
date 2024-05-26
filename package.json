@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "To create a docker util image 1. Create a Dockerfile, I used only the baseimage and then set the workdir 2. Build the Dockerfile 3. Exec command `docker run -it node-util npm init` but here is a catch, using volume mount clone the execution of the command to the host machine as the idea of the docker utility is to do things without having to setup the host machine 4. Transform the command as `docker run -it -v $(pwd):/app node-util npm init`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
